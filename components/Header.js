@@ -6,6 +6,7 @@ import {
   SearchIcon,
   UserIcon,
 } from "@heroicons/react/outline";
+import { useRouter } from "next/dist/client/router";
 
 import Image from "next/image";
 import HeaderItems from "./HeaderItems";
@@ -31,5 +32,9 @@ function Header() {
     </header>
   );
 }
+
+const toDoList = () => {
+  return <div>WH</div>;
+};
 
 export default Header;
