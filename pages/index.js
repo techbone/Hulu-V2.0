@@ -4,9 +4,13 @@ import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Results from "../components/Results";
 import { requests } from "../utils/requests";
+import { useEffect } from "react";
+export default function Home({ results }) {
+  // console.log(results);
+  // useEffect(() => {
+  //   console.log(`https://api.themoviedb.org/3${requests.fetchTrending.url}`);
+  // }, []);
 
-export default function Home(props) {
-  console.log(props);
   return (
     <div>
       <Head>
@@ -22,7 +26,7 @@ export default function Home(props) {
       <Nav />
 
       {/* Results */}
-      {/* <Results results={props.results} /> */}
+      <Results results={results} />
     </div>
   );
 }
@@ -33,7 +37,9 @@ export async function getServerSideProps(context) {
     `https://api.themoviedb.org/3${
       requests[genre]?.url || requests.fetchTrending.url
     }`
-  ).then((res) => res.json());
+  )
+    .then((res) => res.json())
+    .catch((err) => console.log(err));
   return {
     props: {
       results: request.results,

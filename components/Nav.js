@@ -1,6 +1,5 @@
 import { useRouter } from "next/dist/client/router";
 import { requests } from "../utils/requests";
-import { useEffect } from "react";
 const Nav = () => {
   const router = useRouter();
 
