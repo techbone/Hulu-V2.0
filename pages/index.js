@@ -22,7 +22,7 @@ export default function Home({ results }) {
       {/* Header */}
       <Header />
 
-      {/* Nav */}
+      {/* Navigation */}
       <Nav />
 
       {/* Results */}
