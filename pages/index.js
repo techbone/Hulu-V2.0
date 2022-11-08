@@ -6,7 +6,6 @@ import Results from "../components/Results";
 import { requests } from "../utils/requests";
 import { useEffect } from "react";
 export default function Home({ results }) {
-  console.log(results);
   useEffect(() => {
     console.log(`https://api.themoviedb.org/3${requests.fetchTrending.url}`);
   }, []);
