@@ -17,13 +17,13 @@ export default function Home({ results }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Header */}
+      {/* Header. */}
       <Header />
 
-      {/* Navigation */}
+      {/* Navigation. */}
       <Nav />
 
-      {/* Results */}
+      {/* Results. */}
       <Results results={results} />
     </div>
   );
