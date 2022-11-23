@@ -33,8 +33,4 @@ function Header() {
   );
 }
 
-const toDoList = () => {
-  return <div>WH</div>;
-};
-
 export default Header;
