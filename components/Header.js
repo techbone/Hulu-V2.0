@@ -7,7 +7,6 @@ import {
   UserIcon,
 } from "@heroicons/react/outline";
 import { useRouter } from "next/dist/client/router";
-
 import Image from "next/image";
 import HeaderItems from "./HeaderItems";
 
